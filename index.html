@@ -43,19 +43,114 @@
 					</nav>
 
 				<!-- Banner -->
-					<section id="banner" class="major" style= "background-image: url('images/Cover.JPG');">
-						<div class="inner">
+	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Asif Istiak – Slider Banner</title>
+  <style>
+    /* ── Kill the template’s dark overlay/background ── */
+    section#banner.major {
+      background: none !important;
+      background-image: none !important;
+    }
+    section#banner.major::before,
+    section#banner.major::after {
+      display: none !important;
+    }
+
+    /* ── Banner & slider sizing ── */
+    #banner {
+      position: relative;
+      height: 60vh;            /* adjust height as you like */
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    .banner-slider {
+      width: 100%;
+      height: 100%;
+    }
+    .banner-slider .slides {
+      display: flex;
+      width: 500%;             /* 5 slides × 100% each */
+      height: 70%;
+      animation: slide 50s linear infinite;
+    }
+    .banner-slider .slides img {
+      width: 10%;              /* each image = 1/5 of the track */
+      height: 100%;
+      object-fit: cover;       /* fill the frame, cropping if needed */
+      flex-shrink: 0;
+    }
+
+    /* ── Slide keyframes ── */
+    @keyframes slide {
+      from { transform: translateX(   0%); }
+      to   { transform: translateX( -80%); }  /* shift by 4 × 20% */
+    }
+
+    /* ── Place title/subtitle at the bottom center ── */
+    #banner .inner {
+      position: absolute;
+      bottom: 2rem;            /* distance from bottom edge */
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #fff;
+      z-index: 2;
+      pointer-events: none;    /* so it doesn’t block clicks if you add arrows later */
+    }
+    #banner .inner h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 0.1em;
+    }
+    #banner .inner p {
+      margin: 0.5rem 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <section id="banner" class="major">
+    <div class="banner-slider">
+      <div class="slides">
+        <img src="images/Slide1.JPG" alt="Cover 1">
+        <img src="images/Slide2.jpg" alt="Cover 2">
+        <img src="images/Slide3.jpg" alt="Cover 3">
+        <img src="images/Slide4.jpg" alt="Cover 4">
+        <img src="images/Slide5.jpg" alt="Cover 5">
+		<img src="images/Slide6.jpg" alt="Cover 6">
+      </div>
+    </div>
+
+    <!-- Bottom‑centered Title & Subtitle -->
+    <div class="inner">
+      
+      <p>I am a PhD candidate, researcher, teacher and mechanical engineer with a solid academic mechanical engineering background and
+extensive knowledge in bioengineering, soft tissue mechanics, drug delivery, mechanical design and material science. I am a NIW EB2 Recipient. Currently investigating the morpho‑mechanical properties of cartilage tissue following the application of a newly designed therapeutic agent.</p>
+    </div>
+	</div>
 							
-							<header class="major">
-								<h1>Asif Istiak</h1>
-							</header>
-							
-							<div class="content">
-								<p>A Mechanical Engineering Major, Passionate Researcher, Committed Teacher, Sportsman, Traveler, Activist;  <br>            
-									 A dedicated soul who wants to be immortal by excellent deeds</p>
-							</div>
-							<div class="inner">
+	
+								
+	<div class="inner">
 								<ul class="icons">
+
+									<li>
+  <a href="https://scholar.google.com/citations?user=5C4HMT0AAAAJ&hl=en"
+      class="icon solid alt">
+    <img
+      src="images/gs.jpg"
+      alt="Google Scholar"
+      style="width:1.2em; height:1.2em; vertical-align:middle; margin-right:0.3em;"
+    />
+    <span class="label">Google Scholar</span>
+  </a>
+</li>
 									<li><a href="mailto:asif.istiak14@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 							<li><a href="https://www.linkedin.com/in/asif-istiak/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 							<l<li><a href="https://scholar.google.com/citations?user=5C4HMT0AAAAJ&hl=en" class="icon brands alt fa-google-scholar"><span class="label">Google Scholar</span></a></li>
@@ -69,8 +164,12 @@
 							</div>
 							
 						</div>
-						
-					</section>
+  </section>
+
+</body>
+</html>
+
+
 					<section id="two" class="spotlights">
 							<section>
 								<a class="image" style="width: fit-content;" >
@@ -84,25 +183,27 @@
 										</header>
 									<div>
 										<ul>
-												<li>Graduate Research Assistant | <a href="https://www.4mlab.net/posts/Lab%20Members.html">4M Lab</a> | Jan 2023 - Present </li>
-												<li>Graduate Teaching Assistant | <a href="https://mche.louisiana.edu/">Mechanical Engineering Dept., ULL</a> | Jan 2023 - Apr 2023 </li>
-												<li>Graduate Research Assistant | <a href="https://www.researchgate.net/lab/Hui-Yun-Hwang-Lab">Smart Material & Mechanical System Lab</a> | Mar 2021 - Dec 2022 </li>
+												<li>Graduate Assistant | <a href="https://www.4mlab.net/posts/Lab%20Members.html">Musculoskeletal Mechanics and Multiscale Materials Lab</a> | Jan 2023 - Present </li>
+												<li>Graduate Teaching Assistant | <a href="https://mche.louisiana.edu/">Mechanical Engineering Dept., ULL</a> | Jan 2023 - Present </li>
+								                <li>Graduate Research Assistant | <a href="https://www.researchgate.net/lab/Hui-Yun-Hwang-Lab">Smart Material & Mechanical System Lab</a> | Mar 2021 - Dec 2022 </li>
 												
-												<li>Boiler Maintenance Engineer | PCF Feed Industries | May 2020 - Jul 2020 </li>
-												<li>Boiler Design and Quality Control Engineer | Silver Boiler Energy | May 2019 - Jun 2019 </li>
-												<li>Math Teacher | Sunrise University Admission Coaching Center| Jan 2015 - Jan 2018</li>
+												<p></p>
+												
+												<li>Academic Specialist  | Department of Special Services, ULL | Summer 24, 25 </li>
+												<li>Mentor | 7 undergrad students (Bioprinting and Histology) | Fall 23 -Present </li>
+												
 												<p></p>
 											
-												<li>Doctor of philosophy | Systems Engineering(Mechanical), ULL | Jan 2023 - Present </li>
+												<li>PhD Candidate (Bioengineering) | Systems Engineering(Mechanical), ULL | Jan 2023 - Present (ABD) </li>
 												
+												<li>Master of Science | Department of Mechanical Engineering, ULL | Spring 2023 - Spring 2025 </li>
 												<li>Master of Science | Department of Mechanical Design Engineering, ANU | Mar 2021 - Dec 2022 </li>
+									
 												<li>Bachelor of Science | Department of Mechanical Engineering, BUET | Feb 2015 - Apr 2019</li>
 												<p></p>
 												
 											<li>Secretary | Bangladesh Student Association, ULL | Feb 2023 - Feb 2024</li>	
 											<li>Vice President | BUET Environmental Club | Feb 2018 - Feb 2019</li>
-												<li>Class Representative | Department of Mechanical Engineering, BUET | Feb 2015 - Sep 2018</li>
-												
 												
 										</ul>
 											
@@ -115,95 +216,7 @@
 
 					
 
-				<!-- Main -->
-				<div id="main">
-
-					<!-- Two -->
-					
-						
-								
-					
-								<!---ul class="actions">
-									<li><a href="Overview.html" class="button next">Get Started</a></li>
-								</ul--->
-							</div>
-							</section>
-					<!--One -->
-							<section id="one" class="tiles">
-								
-								<article>
-									<!-- Banner -->
-					<section id="banner" class="major" style= "background-image: url('images/project.png');">
-						<div class="inner">
-									<header class="major">
-										<h3><a href="Projects.html" class="button fit;link">Projects&#9755</a></h3>
-										<p>Excercise of Scheme & Creativity</p>
-									</header>
-								</article>
-								<article>
-									<!-- Banner -->
-					<section id="banner" class="major" style= "background-image: url('images/research.jpg');">
-						<div class="inner">
-									<header class="major">
-										<h3><a href="Research.html" class="button fit;link">Research & Publications&#9755</a></h3>
-										<p>A little innovation can change the whole universe</p>
-									</header>
-								</article>
-								<article>
-									
-				<!-- Banner -->
-					<section id="banner" class="major" style= "background-image: url('images/aca.jpg');">
-						<div class="inner">
-									<header class="major">
-										<h3><a href="Academics.html" class="button fit;link">Academics&#9755</a></h3>
-										<p>"Learn as if you were to live forever"-M.Gandhi</p>
-									</header>
-								</article>
-								
-								
-								<article>
-									<!-- Banner -->
-					<section id="banner" class="major" style= "background-image: url('images/job.jpg');">
-						<div class="inner">
-									<header class="major">
-										<h3><a href="Experiences.html" class="button fit;link">Experiences&#9755</a></h3>
-										<p>"The only source of knowledge is experience"-Albert Einstein </p>
-									</header>
-								</article>
-								<article>
-									<!-- Banner -->
-					<section id="banner" class="major" style= "background-image: url('images/award.jpg');">
-						<div class="inner">
-									<header class="major">
-										<h3><a href="Achievements.html" class="button fit;link">Achievements&#9755</a></h3>
-										<p>Diligence, Confidence & perseverance</p>
-									</header>
-								</article>
-								<article>
-									<!-- Banner -->
-					<section id="banner" class="major" style= "background-image: url('images/ex.jpg');">
-						<div class="inner">
-									<header class="major">
-										<h3><a href="Activities.html" class="button fit;link">Extra-Curricular Activities&#9755</a></h3>
-										<p>"The quality of life is determined by its activities"-Aristotle</p>
-									</header>
-								</article>
-								<article>
-									<!-- Banner -->
-					<section id="banner" class="major" style= "background-image: url('images/library.jpg');">
-						<div class="inner">
-									<header class="major">
-										<h3><a href="Library.html" class="button fit;link">My Library&#9755</a></h3>
-										<p>Feel Free to Roam</p>
-									</header>
-								</article>
-								
-							</section>
-
-						
-							
-
-				</div>
+				
 
 				<!-- Contact -->
 				<section id="contact">
@@ -269,14 +282,26 @@
 					<div class="inner">
 						<p> </p>
 							<ul class="icons">
-								<li><a href="mailto:asif.istiak14@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="https://www.linkedin.com/in/asif-istiak/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://www.researchgate.net/profile/Asif-Istiak" class="icon brands alt fa-researchgate"><span class="label">Researchgate</span></a></li>
-								<li><a href="https://github.com/asif-istiak" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
-								<li><a href="https://www.facebook.com/asif.istiak.125/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/asif__1971_12_16/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.youtube.com/channel/UCXwrDPa5Oq0FfQViaNqebDA" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
-									
+								<li>
+  <a href="https://scholar.google.com/citations?user=5C4HMT0AAAAJ&hl=en"
+      class="icon solid alt">
+    <img
+      src="images/gs.jpg"
+      alt="Google Scholar"
+      style="width:1.2em; height:1.2em; vertical-align:middle; margin-right:0.3em;"
+    />
+    <span class="label">Google Scholar</span>
+  </a>
+</li>
+
+									<li><a href="mailto:asif.istiak14@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/asif-istiak/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.researchgate.net/profile/Asif-Istiak" class="icon brands alt fa-researchgate"><span class="label">Researchgate</span></a></li>
+							<li><a href="https://github.com/asif-istiak" class="icon brands alt fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.facebook.com/asif.istiak.125/" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/asif__1971_12_16/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.youtube.com/channel/UCXwrDPa5Oq0FfQViaNqebDA" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+							
 							
 							</ul>
 						
